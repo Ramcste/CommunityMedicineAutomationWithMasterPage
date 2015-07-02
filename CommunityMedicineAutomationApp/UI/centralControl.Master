@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="centralControl.master.cs" Inherits="CommunityMedicineAutomationApp.UI.centralControl" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="../Styles/style.css" rel="stylesheet" />
+  
+  
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+         <div class="wrapper">
+        <header>
+            
+            <div class="banner">
+                   <div class="banner">
+                   <h1><strong>Community Medicine Automation</strong></h1>
+               </div>
+            </div>
+        </header>
+         <nav id="primary_nav_wrap">
+                <ul>
+                    
+                     <li><a href="HomeUI.aspx">Home</a></li>
+                     <li><a href="#">Tasks</a> 
+                     <ul>
+                     <li><a href="DiseaseEntryUI.aspx">Disease Entry</a></li>
+                     <li><a href="MedicineEntryUI.aspx">Medicine Entry</a></li>
+                     <li><a href="CenterCreateUI.aspx"> Create Center</a></li>
+                     <li><a href="CenterInfoUI.aspx">Center Info</a></li>
+                     <li><a href="MedicineQuantityUI.aspx">Medicine Send</a></li>
+                     </ul>
+                    </li>
+                    <li> <a href="DiseaseWiseReportUI.aspx">Disease-Wise-Report</a></li>
+                    <li><a href="DiseaseDemographicReportUI.aspx">Disease Demographic Report</a></li>
+                    <li> <a href="AllDiseaseBarChatDiagram.aspx">All Disease Barchat Diagram</a></li>
+                    <li><a href="CenterLoginUI.aspx">Center Login</a></li>
+               
+                     </ul>
+
+                    
+            </nav>
+        
+        
+        <div class="container">
+        
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+            
+  </div>
+    </form>
+</body>
+</html>
